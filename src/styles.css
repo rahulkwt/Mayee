@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('./Fonts/Nunito-Bold.woff2') format('woff2'),
+        url('./Fonts/Nunito-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./Fonts/Nunito-ExtraBold.woff2') format('woff2'),
+        url('./Fonts/Nunito-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./Fonts/Nunito-ExtraLight.woff2') format('woff2'),
+        url('./Fonts/Nunito-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./Fonts/Nunito-Light.woff2') format('woff2'),
+        url('./Fonts/Nunito-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./Fonts/Nunito-Medium.woff2') format('woff2'),
+        url('./Fonts/Nunito-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./Fonts/Nunito-Regular.woff2') format('woff2'),
+        url('./Fonts/Nunito-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./Fonts/Nunito-SemiBold.woff2') format('woff2'),
+        url('./Fonts/Nunito-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+/* p,h1,h2,h3,h4,h5,h6,img,button,ul,li,a,div{
+    background-color: green;
+} */
+.popup-active{
+    overflow: hidden;
+}
+.scroll-bar::-webkit-scrollbar{
+    width: 10px;
+    height: 8px;
+}
+.scroll-bar::-webkit-scrollbar-button{
+    display: none;
+}
+.scroll-bar::-webkit-scrollbar-thumb{
+    background: #d9d9d9;
+    border-radius: 12px;
+}
+.mycont{
+    max-width: 1100px;
+    margin: auto;
+    @apply px-28;
+}
+@media (max-width: 1024px) {
+    .mycont {
+      max-width: calc(100% - 30px); 
+    } 
+}
+@media (max-width: 990px) {
+    .mycont {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px; 
+    } 
+}
+/* @media (max-width: 768px) {
+    .container {
+        max-width: 760px!important;
+    } 
+}
+@media (max-width: 526px) {
+    .container {
+        max-width: 500px!important;
+    } 
+}
+@media (min-width: 360px) {
+    .container {
+        max-width: 360px!important; 
+    } 
+} */
+.blog-pt{
+    display: none;
+}
+.featured-post-container{
+    @apply flex justify-between ipadpro:flex-row moto:flex-col;
+}
+.featured-pst{
+    @apply bg-gray-200 ipadpro:w-40 ipadpro:py-1 ipadpro:rounded-sm ipadpro:text-xl ipadpro:mb-5 text-gray-400 rounded-xl moto:w-96 moto:h-auto text-center moto:py-4 moto:text-5xl moto:block moto:mb-10 font-semibold;
+}
+.feature-head{
+    @apply ipadpro:text-3xl font-semibold ipadpro:w-auto ipadpro:mb-6 moto:w-auto moto:text-6xl moto:leading-snug moto:mb-12;
+}
+.feature-img{
+    @apply h-auto ipadpro:mt-0 moto:mt-10 moto:w-full ipadpro:w-1/2;
+}
+.featured-content{
+    @apply moto:w-full ipadpro:w-1/2;
+}
+.blog-13-title{
+    @apply font-semibold  ipadpro:text-xl ipadpro:font-semibold text-gray-800 moto:text-4xl moto:font-bold moto:mb-10;
+}
+.blog-13-date{
+    @apply ipadpro:my-1 ipadpro:text-xl text-gray-700 moto:text-4xl moto:font-semibold moto:mb-6 moto:mt-10;
+}
+.blog-author-img{
+    @apply ipadpro:mr-5 ipadpro:w-10 moto:mr-10 moto:w-28;
+}
+.blog-author-name-container{
+    @apply moto:flex moto:justify-center moto:items-center moto:mr-2;
+}
+.blog-author-name{
+    @apply ipadpro:text-base ipadpro:mr-0 ipadpro:font-normal moto:text-4xl;
+}
+.blog-author-date-container{
+    @apply moto:flex moto:justify-center moto:items-center;
+}
+.blog-author-date{
+    @apply ipadpro:text-base moto:text-4xl;
+}

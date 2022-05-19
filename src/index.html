@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tailwind</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="font-Nunito relative">
+        <!-- <div class="bg-green-500 text-3xl">Welcome</div> -->
+        <section class="popup fixed hidden bg-black bg-opacity-90 z-20 w-full h-full py-16  max-w-screen-7xl ipad:justify-center">
+            <div class="mycont flex bg-white relative px-0 rounded-md overflow-hidden ipad:flex-col ipad:max-h-90">
+                <div class="cross-out absolute top-2 right-5 cursor-pointer p-0"><i class="bi bi-x-square text-3xl rotate-45 transform-gpu text-gray-400"></i></div>
+                <div class="w-1/4 h-full ipad:w-full ipad:h-96">
+                    <img src="./Images/Blogs/Pt1.jpeg" class="imgport h-full w-full object-cover" alt="" >
+                </div>
+                <div class="blog-content w-3/4 h-582 overflow-y-auto pt-20 px-5 scroll-bar ipad:w-full">
+                    <div class="head mb-20 font-bold text-3xl text-blue-600">
+                        <h6 class="font-normal">Lorem ipsum dolor sit amet.</h6>
+                    </div>
+                    <div class="desc font-semibold text-xl text-blue-500">
+                        <p>Write a three line copy here so that this space looks neat and tidy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <header class="bg-gray-700 px-20 py-3 moto:hidden">
+            <nav class="justify-between flex items-end">
+                <div>
+                    <img src="./Images/Blogs/logo-def.svg" alt="">
+                </div>
+                <div class="">
+                    <ul class="flex text-white">
+                        <li class="mr-6 cursor-pointer">About us</li>
+                        <li class="mr-6 cursor-pointer">Our Water</li>
+                        <li class="mr-6 cursor-pointer">Applications</li>
+                        <li class="mr-6 cursor-pointer">Blogs</li>
+                        <li class="mr-6 cursor-pointer">Subscriptions</li>
+                        <li class="mr-20 cursor-pointer">Contact us</li>
+                        <li class=""><a href="#"><img src="./Images/Blogs/icn.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section class="ipadpro:block h-screen w-full moto:hidden relative">
+            <img class="w-full h-full object-cover" src="./Images/Blogs/blogs-banner.webp" alt="">
+            <div class="z-10 absolute top-72 left-40">
+                <h1 class="text-white text-6xl font-bold">Blogs</h1>
+            </div>
+        </section>
+        <section class="py-10">
+            <div class="mycont blog-click">
+                <h1 class="text-black text-6xl mt-20 mb-16 ipadpro:hidden ">Blogs</h1>
+                <div class="featured-post-container">
+                    <div class="ipadpro:mr-3 featured-content">
+                        <span class="featured-pst">Featured Post</span>
+                        <h3 class="blog-head feature-head">Write a three line copy here so that this space looks neat and tidy</h3>
+                        <h4 class="hidden blog-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique earum, optio quas asperiores autem fugiat maxime pariatur iste explicabo? Sed cum, magnam corrupti aliquam autem accusamus eveniet officiis velit ipsum suscipit facilis expedita architecto itaque maiores sequi animi! Sunt, reiciendis iusto voluptate laborum incidunt obcaecati totam quasi deserunt voluptas quisquam maiores consequatur expedita nisi debitis doloribus repellat et numquam blanditiis assumenda vitae sapiente! Sequi, placeat? Dignissimos non distinctio, iste deserunt voluptas saepe sit accusamus quae at sint delectus earum alias ducimus consequuntur vitae maiores quasi, facere nisi sunt illum harum. Quo aliquam quos ipsum repudiandae, molestiae tempora dolore accusantium dignissimos!</h4>
+                        <div class="flex">
+                            <div class="blog-author-img">
+                                <img src="./Images/Blogs/blogs-dp.svg" alt="" class="w-full">
+                            </div>
+                            <div class="blog-author-name-container">
+                                <span class="blog-author-name">Writen by Sofia Munroe</span>
+                            </div>
+                            <div class='blog-author-date-container'>
+                                <span class="blog-author-date">14 February 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-img">
+                        <img src="./Images/Blogs/bottle.webp" alt="" class="object-cover w-full">
+                        <img class="blog-pt" src="./Images/Blogs/Pt1.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="py-10 moto:mt-20">
+            <div class="mycont">
+                <div class="flex justify-between">
+                    <div class="blog-click mr-4">
+                        <div class="ipadpro:mb-5">
+                            <img class="w-full h-full object-cover" src="./Images/Blogs/drinking.webp" alt="">
+                            <img class="blog-pt" src="./Images/Blogs/Pt2.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="blog-13-date">13 February 2021</p>
+                            <h3 class="blog-head blog-13-title">Write a three line copy here so that this space looks neat and tidy</h3>
+                            <span class="hidden blog-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas adipisci, harum repellat, amet architecto, atque perferendis iste eius consequatur natus. Amet ullam eligendi adipisci commodi iste non libero ab doloremque voluptatibus, quam fuga dicta, tempore quis vero magni esse laboriosam sed saepe odit! Nobis iste nihil aliquid iusto voluptates? Distinctio reprehenderit illo ut rerum nihil perferendis reiciendis ratione nulla consectetur eligendi, sed sint, recusandae quam aperiam itaque. Corporis, nobis.</span>
+                        </div>
+                    </div>
+                    <div class=" blog-click mr-4">
+                        <div class="ipadpro:mb-5">
+                            <img class="w-full" src="./Images/Blogs/vegetables.webp" alt="">
+                            <img class="blog-pt" src="./Images/Blogs/Pt3.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="blog-13-date">13 February 2021</p>
+                            <h3 class="blog-head blog-13-title">Write a three line copy here so that this space looks neat and tidy</h3>
+                            <div class="blog-desc hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis labore veniam maxime eum, iste porro! Eveniet corrupti, temporibus dignissimos amet quam cum hic sunt repudiandae mollitia modi maxime labore, similique aperiam tenetur facere, incidunt et non voluptates nostrum pariatur consequatur. Modi, distinctio ab? Perferendis debitis beatae in earum deserunt ducimus.</div>
+                        </div>
+                    </div>
+                    <div class="blog-click">
+                        <div class="ipadpro:mb-5 w-80">
+                            <img class="w-full" src="./Images/Blogs/sea.webp" alt="">
+                            <img class="blog-pt" src="./Images/Blogs/Pt4.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="blog-13-date">13 February 2021</p>
+                            <h3 class="blog-head blog-13-title">Write a three line copy here so that this space looks neat and tidy</h3>
+                            <div class="hidden blog-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis asperiores rerum hic saepe maiores, tempora labore laudantium at esse incidunt, consequuntur aspernatur nam consectetur obcaecati. Repellat quibusdam amet tempora illo totam. Fugit repellat, magni ipsa quia totam at nulla voluptatem.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="py-10">
+            <div class="mycont blog-click">
+                <div class="featured-post-container">
+                    <div class="ipadpro:mr-3 moto:p-0 featured-content">
+                        <span class="featured-pst">Featured Post</span>
+                        <h3 class="feature-head blog-head">Write a three line copy here so that this space looks neat and tidy</h3>
+                        <span class="hidden blog-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam, quod. Unde ab voluptate saepe doloremque facilis similique repellat maiores voluptatibus maxime libero molestias necessitatibus repellendus provident voluptas, vel officiis nostrum expedita labore sed officia corrupti autem reprehenderit cum dicta? Odit aspernatur dolorem illum dolores necessitatibus molestiae at magni accusamus labore minima, perspiciatis ipsa laudantium fugit, omnis accusantium hic quidem cumque excepturi reprehenderit sequi explicabo quis deserunt vitae! Dolores neque atque cupiditate animi, odit dolorum! Laborum architecto velit, mollitia eligendi expedita pariatur eius debitis magnam culpa ea hic, fugiat eveniet! Excepturi suscipit, voluptatibus eligendi tenetur doloremque sequi facilis voluptatum optio voluptas adipisci sit ratione dolorum odit iure mollitia soluta! Voluptates eaque omnis recusandae aspernatur voluptate, ea deserunt nihil, est esse exercitationem dignissimos culpa dolorum totam expedita tenetur similique, eum voluptatem id odio! At expedita cumque earum possimus error sit deserunt, neque aut nihil quia, soluta adipisci quam quaerat, fugiat eius sequi? Sunt pariatur ipsa culpa harum id iusto quam natus quod aliquid quas ea omnis quasi porro adipisci animi praesentium nobis ad dolorem reprehenderit nemo eos, consequuntur sit nam! Ipsam deleniti provident unde. Quos aliquid totam dolorem fugit debitis distinctio sit ullam, cumque delectus quo. Enim quisquam totam ea exercitationem blanditiis.</span>
+                        <div class="flex">
+                            <div class="blog-author-img">
+                                <img src="./Images/Blogs/blogs-dp.svg" alt="" class="w-full">
+                            </div>
+                            <div class="blog-author-name-container">
+                                <span class="blog-author-name">Writen by Sofia Munroe</span>
+                            </div>
+                            <div class='blog-author-date-container'>
+                                <span class="blog-author-date">14 February 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-img">
+                        <img src="./Images/Blogs/banana.webp" alt="" class="w-full h-full object-cover">
+                        <img class="blog-pt" src="./Images/Blogs/Pt5.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="py-10 moto:mt-20">
+            <div class="mycont">
+                <div class="flex justify-between">
+                    <div class=" blog-click mr-4">
+                        <div class="ipadpro:mb-5">
+                            <img class="w-full" src="./Images/Blogs/tea.webp" alt="">
+                            <img class="blog-pt" src="./Images/Blogs/Pt6.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="blog-13-date">13 February 2021</p>
+                            <h3 class="blog-head blog-13-title">Write a three line copy here so that this space looks neat and tidy</h3>
+                            <span class="hidden blog-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus est harum placeat alias esse, laboriosam quaerat dignissimos cupiditate eligendi, eveniet possimus amet minima, iste quia recusandae! Consequuntur aspernatur consequatur error obcaecati. Impedit repellat excepturi eos pariatur, similique minus ea ad autem nesciunt at! Ducimus accusamus optio qui blanditiis quaerat ratione exercitationem harum natus earum. Cum impedit reiciendis saepe quos, aspernatur magni unde dolore necessitatibus ullam veritatis, itaque perspiciatis esse asperiores assumenda nobis porro dolorem inventore officia? Maxime consectetur laudantium sapiente esse ullam quaerat veritatis debitis delectus, sunt enim recusandae inventore ea atque temporibus vel quam nulla, tempore architecto tenetur ipsum.</span>
+                        </div>
+                    </div>
+                    <div class=" blog-click mr-4">
+                        <div class="ipadpro:mb-5">
+                            <img class="w-full" src="./Images/Blogs/art.webp" alt="">
+                            <img class="blog-pt" src="./Images/Blogs/Pt7.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="blog-13-date">13 February 2021</p>
+                            <h3 class="blog-head blog-13-title">Write a three line copy here so that this space looks neat and tidy</h3>
+                            <span class="blog-desc hidden">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident dolorum quae fuga. Repudiandae soluta, fugit qui officiis ratione laboriosam numquam delectus ipsa voluptates inventore doloremque quam accusantium nostrum, maxime architecto, optio adipisci officia! Animi sunt doloremque ullam. Voluptatem distinctio possimus dolor ducimus, voluptas iure incidunt architecto tempora blanditiis quasi minus. Obcaecati quia excepturi, quam porro numquam sit. Blanditiis debitis ut, aperiam illo libero sint voluptatum eius, totam reiciendis accusamus distinctio aliquam dolor omnis incidunt esse optio natus in non eum? Cumque vel placeat necessitatibus. Cupiditate aliquam et, laborum eum mollitia cumque atque error ipsum nobis quia perferendis adipisci voluptatibus fuga, ut sapiente autem earum distinctio recusandae quasi. Dignissimos itaque praesentium iste facere et culpa repellendus quisquam atque cum laboriosam quos corrupti perspiciatis labore, nisi laudantium magnam harum eaque obcaecati ad? Numquam cum provident, architecto quibusdam laboriosam perspiciatis dolorum molestiae itaque? Dignissimos nihil aspernatur repudiandae dicta quia nemo exercitationem veniam repellendus?</span>
+                        </div>
+                    </div>
+                    <div class=" blog-click">
+                        <div class="ipadpro:mb-5 w-80">
+                            <img class="w-full" src="./Images/Blogs/trees.webp" alt="">
+                            <img class="blog-pt" src="./Images/Blogs/Pt8.jpg" alt="">
+                        </div>
+                        <div>
+                            <p class="blog-13-date">13 February 2021</p>
+                            <h3 class="blog-head blog-13-title">Write a three line copy here so that this space looks neat and tidy</h3>
+                            <span class="blog-desc hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores reiciendis dolor perspiciatis dicta similique a suscipit numquam at doloremque ratione. Dolorum officiis voluptatibus dolore fugit quia eos culpa a, et quaerat earum eaque architecto amet numquam maiores quod iure cupiditate aliquam eum voluptatem. Est delectus nisi repellendus porro aperiam? Officia cumque adipisci ratione mollitia accusamus dolor, eius obcaecati eos nihil quis, repellendus, libero delectus atque ex beatae dicta voluptas. Maxime enim quod veritatis perspiciatis minima expedita amet, eligendi voluptatibus inventore aliquam, fugiat nesciunt aperiam vitae voluptatem. Iure nam iste animi?</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <script type="module" src="index.js"></script>
+    </body>
+</html>
