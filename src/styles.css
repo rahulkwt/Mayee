@@ -87,7 +87,7 @@
 .mycont{
     max-width: 1100px;
     margin: auto;
-    @apply px-28;
+    @apply moto:px-5 macbkair:px-28;
 }
 @media (max-width: 1024px) {
     .mycont {
@@ -97,8 +97,8 @@
 @media (max-width: 990px) {
     .mycont {
         max-width: 100%;
-        padding-left: 15px;
-        padding-right: 15px; 
+        /* padding-left: 15px;
+        padding-right: 15px;  */
     } 
 }
 /* @media (max-width: 768px) {
@@ -123,13 +123,13 @@
     @apply flex justify-between ipadpro:flex-row moto:flex-col;
 }
 .featured-pst{
-    @apply bg-gray-200 ipadpro:w-40 ipadpro:py-1 ipadpro:rounded-sm ipadpro:text-xl ipadpro:mb-5 text-gray-400 rounded-xl moto:w-96 moto:h-auto text-center moto:py-4 moto:text-5xl moto:block moto:mb-10 font-semibold;
+    @apply bg-gray-200 ipadpro:w-40 ipadpro:py-1 ipadpro:rounded-sm ipadpro:text-xl ipadpro:mb-5 text-gray-400 rounded-xl ipad:text-2xl ipad:w-52 moto:w-96 moto:h-auto text-center moto:py-4 moto:text-5xl moto:block moto:mb-10 font-semibold;
 }
 .feature-head{
-    @apply ipadpro:text-3xl font-semibold ipadpro:w-auto ipadpro:mb-6 moto:w-auto moto:text-6xl moto:leading-snug moto:mb-12;
+    @apply ipadpro:text-3xl font-semibold ipadpro:mb-6 ipad:text-5xl ipad:w-690 mobile:w-500 moto:text-6xl moto:leading-snug moto:mb-12;
 }
 .feature-img{
-    @apply h-auto ipadpro:mt-0 moto:mt-10 moto:w-full ipadpro:w-1/2;
+    @apply h-auto ipadpro:mt-0 ipad:w-690 moto:mt-10 moto:w-full ipadpro:w-1/2;
 }
 .featured-content{
     @apply moto:w-full ipadpro:w-1/2;
@@ -141,17 +141,17 @@
     @apply ipadpro:my-1 ipadpro:text-xl text-gray-700 moto:text-4xl moto:font-semibold moto:mb-6 moto:mt-10;
 }
 .blog-author-img{
-    @apply ipadpro:mr-5 ipadpro:w-10 moto:mr-10 moto:w-28;
+    @apply ipadpro:mr-5 ipadpro:w-10 ipad:w-16 ipad:mr-8 moto:mr-10 moto:w-28;
 }
 .blog-author-name-container{
     @apply moto:flex moto:justify-center moto:items-center moto:mr-2;
 }
 .blog-author-name{
-    @apply ipadpro:text-base ipadpro:mr-0 ipadpro:font-normal moto:text-4xl;
+    @apply ipadpro:text-base ipadpro:mr-0 ipadpro:font-normal ipad:text-2xl moto:text-4xl;
 }
 .blog-author-date-container{
     @apply moto:flex moto:justify-center moto:items-center;
 }
 .blog-author-date{
-    @apply ipadpro:text-base moto:text-4xl;
+    @apply ipadpro:text-base ipad:text-2xl moto:text-4xl;
 }
